@@ -1,0 +1,3 @@
+付呗开放平台接口.net core 2.2 DEMO
+修改配置文件
+FubeiDemoMvcApplicationCore2/appsettings.json
