@@ -1,9 +1,8 @@
 # 付呗生活圈开放平台公众号支付demo
 
 ## 项目简介
-该项目基于ASP.NET core MVC 2.2框架开发，实现了付呗生活圈开放平台的公众号授权、支付、回调通知等业务逻辑。
-点击查看[付呗生活圈开放平台1.0接口文档](http://docs.51fubei.com/open-api/)
-点击查看[付呗生活圈开放平台2.0接口文档](http://docs.51fubei.com/agent-api/)
+该项目基于ASP.NET core MVC 2.2框架开发，实现了付呗生活圈开放平台的公众号授权、支付、回调通知等业务逻辑。支持[付呗开放平台1.0接口](http://docs.51fubei.com/open-api/)和
+[付呗开放平台2.0接口](http://docs.51fubei.com/agent-api/)
 
 ### 项目依赖
 >* .Net Core 2.2
