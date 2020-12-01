@@ -44,8 +44,8 @@ $ git clone https://github.com/hz-zentech/fubei-aspnetcore-demo.git
 ```
 #### 设置开发模式（可选）
 该项目支持的IDE为：
-> * [Visual Studio 2017](https://www.visualstudio.com/downloads/)
-> * [Rider 2017](https://www.jetbrains.com/rider/)
+> * [Visual Studio 2019](https://www.visualstudio.com/downloads/)
+> * [Rider 2019](https://www.jetbrains.com/rider/)
 > * [Visual Studio Code](https://code.visualstudio.com/)
 
 IDE调试时，默认为生成环境，无法调试本项目，如需对调试源码，需按如下方式启动开发模式，具体可参考[StackOverflow #38273596](https://stackoverflow.com/questions/38273596/net-core-project-json-commands-set-aspnetcore-environment)，开发模式下，加载的配置文件为`appsettings.Development.json`。
@@ -89,7 +89,24 @@ $ dotnet run
   </packageSources>
 </configuration>
 ```
+## Demo配置文件说明
+项目FubeiOpenApiSample中目录下appsettings.json的ApplicationConfiguration节为项目Demo的配置文件，请在此填入分发的密钥。
+``` json
+{
+  "ApplicationConfiguration": {
+    "Api": "https://shq-api.51fubei.com/gateway",
+    "AppId": "", 
+    "AppSecret": "",
+    "PayH5Page": "https://shq-api.51fubei.com/paypage",
 
+    "Api20": "https://shq-api.51fubei.com/gateway/agent",
+    "VendorSn": "",
+    "VendorSecret": ""
+  }
+}
+```
+商户级接口：AppId和AppSecret必填
+代理商级接口：VensorSn和VendorSecret必填
 
 ## 核心类说明
 ### 工具类
